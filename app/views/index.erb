@@ -11,14 +11,10 @@
 
       <% @recipes.each.with_index do |recipe| %>
         <h2>Name: <a href="/recipes/<%= recipe.name %>"><%= recipe.name %></a></h2>
-        <p>Ingredients: <%= @recipe[:ingredients][index] %>
+        <p>Ingredients: <%= recipe.ingredients %>
         <br>
-        Cook time: <%= @recipe[:cook_time][index] %>
+        Cook time: <%= recipe.cook_time %>
         </p>
-        <form action="/recipes/<%= @recipes.id %>/delete" method="post">
-          <input id="hidden" type="hidden" name="_method" value="delete">
-          <input type="submit" value="delete">
-        </form>
       <% end %>
 
       </form>
