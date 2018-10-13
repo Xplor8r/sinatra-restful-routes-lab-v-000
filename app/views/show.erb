@@ -10,6 +10,10 @@
       <h1>Recipe Name: <%= params[:name] %></h1>
       <h1>Recipe ingredients: <%= params[:ingredients]%></h1>
       <h1>Recipe cook time: <%= params[:cook_time]%></h1>
+      <form action="/recipes/<%= @recipes.id %>/delete" method="post">
+        <input id="hidden" type="hidden" name="_method" value="delete">
+        <input type="submit" value="delete">
+      </form>
     </div>
   </body>
 </html>
