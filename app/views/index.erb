@@ -5,9 +5,9 @@
     <title>title</title>
   </head>
   <body>
-    <h1></h1>
+    <h1>Recipes</h1>
     <div class="container">
-      <h1>Recipes</h1>
+
 
       <% @recipes.each.with_index do |recipe| %>
         <h2>Recipe Name: <a href="/recipes/<%= recipe.id %>"><%= recipe.name %></a></h2>
