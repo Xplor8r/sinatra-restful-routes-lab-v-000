@@ -8,8 +8,8 @@
     <h1></h1>
     <div class="container">
       <h1>Recipe Name: <%= @recipe.name %></h1>
-      <p>Recipe ingredients: <%= @recipe.ingredients%></p>
-      <p>Recipe cook time: <%= @recipe.cook_time%></p>
+      <p>Recipe ingredients: <%= @recipe.ingredients %></p>
+      <p>Recipe cook time: <%= @recipe.cook_time %></p>
       <form action="/recipes/<%= @recipes.id %>/delete" method="post">
         <input id="hidden" type="hidden" name="_method" value="delete">
         <input type="submit" value="delete">
